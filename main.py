@@ -19,5 +19,5 @@ register_callback_query(dp)
 register_notes_handlers(dp)
 register_fsm_bot(dp)
 
-if __name__ == '__main__':
+if __nameпше__ == '__main__':
     executor.start_polling(dp)
