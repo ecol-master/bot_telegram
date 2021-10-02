@@ -17,7 +17,8 @@ async def check_callback(callback: types.CallbackQuery):
             await bot.delete_message(chat_id=callback.message.chat.id, message_id=callback.message.message_id)
         else:
             USERS_VOCALIBARY[id_user].clear()
-            await bot.send_message(chat_id=callback.message.chat.id, text='Your notes have been successfully deleted.☑', )
+            await bot.send_message(chat_id=callback.message.chat.id,
+                                   text='Your notes have been successfully deleted.☑', )
     else:
         await bot.send_message(chat_id=callback.message.chat.id, text='First, call the command /start')
 
